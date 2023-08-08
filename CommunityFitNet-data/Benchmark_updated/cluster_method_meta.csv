@@ -1,0 +1,7 @@
+method_name,properties
+DomiRank,Undirected
+degree,Undirected
+in_out_degree,Directed
+Eigenvector,Undirected
+PageRank,None
+SpringRank,Directed

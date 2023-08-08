@@ -116,11 +116,11 @@ def get_springRank(edgelist: np.ndarray):
 def main():
 
     # load df from pickle
-    pickle_file = '/Users/m33040/Downloads/CommunityFitNet-master/Benchmark_updated/CommunityFitNet_updated.pickle'
+    pickle_file = 'CommunityFitNet-data/Benchmark_updated/CommunityFitNet_updated.pickle'
     df = load_benchmark_pickle_to_df(pickle_file)
 
     # save to pickle in Benchmark_updated
-    out_file_path = '/Users/m33040/Downloads/CommunityFitNet-master/Benchmark_updated/CommunityFitNet_updated_'
+    out_file_path = 'CommunityFitNet-data/Benchmark_updated/CommunityFitNet_updated_'
 
     # create new df - output/cluster results df
     out_df = pd.DataFrame(columns=['network_index'])
@@ -128,7 +128,7 @@ def main():
 
 
     # load in cluster metadata df
-    meta_df = pd.read_csv('/Users/m33040/Downloads/CommunityFitNet-master/Benchmark_updated/cluster_method_meta.csv')
+    meta_df = pd.read_csv('CommunityFitNet-data/Benchmark_updated/cluster_method_meta.csv')
     for index, row in meta_df.iterrows():
         
         df_filter = df.copy()

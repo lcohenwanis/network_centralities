@@ -5,3 +5,4 @@ in_out_degree,Directed
 Eigenvector,Undirected
 PageRank,None
 SpringRank,Directed
+Closeness,Undirected
